@@ -1,0 +1,5 @@
+#grid-container {
+    display: grid;
+    width: 500px;
+    border-style: solid;
+}
