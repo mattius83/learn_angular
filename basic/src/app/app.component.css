@@ -1,5 +1,47 @@
-#grid-container {
-    display: grid;
-    width: 500px;
-    border-style: solid;
+.grid {
+  display: grid;
+  grid-template-columns: 70px auto 70px;
+  grid-template-rows: 60px 80px auto 150px;
+  grid-gap: 3px;
+}
+
+header,
+aside,
+article,
+footer {
+  background: #eaeaea;
+  padding: 1em;
+}
+
+.menu-bar {
+  grid-column: 1/4;
+  background: #eaeaea;
+  padding: 1em;
+}
+
+header, footer {
+  grid-column: 1 / 4;
+  display: flex;
+  alight-items: center;
+  justify-content: center;
+}
+
+/* Demo Specific Styles */
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+/*
+.grid > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+
+#app-container {
+  background-color: light-blue;
+
 }
