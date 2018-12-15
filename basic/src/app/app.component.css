@@ -1,8 +1,14 @@
-.grid {
+.application-container {
   display: grid;
   grid-template-columns: 70px auto 70px;
-  grid-template-rows: 60px 80px auto 150px;
+  grid-template-rows: 150px auto 150px;
   grid-gap: 3px;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50px 100px;
 }
 
 header,
@@ -19,11 +25,17 @@ footer {
   padding: 1em;
 }
 
-header, footer {
+footer {
   grid-column: 1 / 4;
   display: flex;
   alight-items: center;
   justify-content: center;
+}
+
+header {
+  grid-column: 1 / 4;
+  display: flex;
+  alight-items: start;
 }
 
 /* Demo Specific Styles */
